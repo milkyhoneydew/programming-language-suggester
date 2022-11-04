@@ -16,9 +16,15 @@ window.addEventListener("load", function() {
         const question4 = document.querySelector("input#question4").value;
         const question5 = document.querySelector("input#question5").value;
 
-        if (question === front-end) {
+        if (question1 === front-end) {
             javascript.removeAttribute("class");
-        } else if ()
+        } else if (question2 === Christmas && question3 === cake) {
+            python.removeAttribute("class", "hidden");
+        } else if (question4 === True || question5 !== over-easy) {
+            sql.removeAttribute("class", "hidden");
+        };
+
+        event.preventDefault();
 
     });
 

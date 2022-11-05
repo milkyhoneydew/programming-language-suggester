@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
 .hidden {
     display: none;
   }
@@ -5,4 +7,58 @@
 body {
   background-image: url("../images/abstract-computer-screen.jpg");
   background-size: cover;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+}
+
+.btn {
+  font-family: 'Prompt', sans-serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#resetBtn {
+  font-family: 'Prompt', sans-serif;
+}
+
+#resetBtn:hover {
+  cursor: pointer;
+}
+
+#javascript {
+  height: 50em;
+  background-image: url("../images/kitten-with-cake.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#python {
+  height: 50em;
+  background-image: url("../images/christmas-tree.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#sql {
+  height: 50em;
+  background-image: url("../images/over-easy-eggs.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#javascript p {
+  color: red;
+  font-size: 3em;
+}
+
+#python p {
+  color: red;
+  font-size: 3em;
+}
+
+#sql p {
+  color: red;
+  font-size: 3em;
 }

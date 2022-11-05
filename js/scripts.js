@@ -16,11 +16,11 @@ window.addEventListener("load", function() {
         const question4 = document.querySelector("input#question4").value;
         const question5 = document.querySelector("input#question5").value;
 
-        if (question1 === "front-end" && question3 === "cake" && question5 === "poached") {
+        if (question1 === "front-end" && question3 === "cake" && question4 === "true") {
             javascript.removeAttribute("class");
-        } else if (question2 === "Christmas" && question3 === "cake") {
+        } else if (question2 === "Christmas" && question3 === "pie") {
             python.removeAttribute("class", "hidden");
-        } else if (question4 === "True" || question5 === "over-easy") {
+        } else if (question1 === "back-end" || question5 === "over-easy") {
             sql.removeAttribute("class", "hidden");
         };
 

@@ -1,13 +1,13 @@
 # Programming Language Suggester
 
 #### By Tanya Prado
-*Kitten with cake photo by Asal Mshk on Unsplash
-*Christmas tree photo by Alsu Vershinina on Unsplash
-*Eggs photo by Coffeefy Workafe on Unsplash
-*Abstract computer screen photo by Markus Spiske on Unsplash
+*Kitten with cake photo by Asal Mshk on Unsplash  
+*Christmas tree photo by Alsu Vershinina on Unsplash  
+*Eggs photo by Coffeefy Workafe on Unsplash  
+*Abstract computer screen photo by Markus Spiske on Unsplash  
 
 
-#### Website offering suggestions on which programming language to learn.
+## Website offering suggestions on which programming language to learn.
 
 ## Technologies Used
 

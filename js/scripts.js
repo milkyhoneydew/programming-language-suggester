@@ -1,31 +1,41 @@
 window.addEventListener("load", function() {
     const form = document.querySelector("form");
-
-    form.addEventListener("submit", function(event) {
-        let javascript = document.getElementById("javascript");
-        let python = document.getElementById("python");
-        let sql = document.getElementById("sql");
-
-        javascript.setAttribute("class", "hidden");
-        python.setAttribute("class", "hidden");
-        sql.setAttribute("class", "hidden");
-        
-        const question1 = document.querySelector("input#question1").value;
-        const question2 = document.querySelector("input#question2").value;
-        const question3 = document.querySelector("input#question3").value;
-        const question4 = document.querySelector("input#question4").value;
-        const question5 = document.querySelector("input#question5").value;
+    const resetBtn = document.getElementById("resetBtn");
+    const javascript = document.getElementById("javascript");
+    const python = document.getElementById("python");
+    const sql = document.getElementById("sql");
+ 
+    function revealSuggestions(e) {
+        let question1 = document.querySelector("input#question1").value.toLowerCase();
+        let question2 = document.querySelector("input#question2").value.toLowerCase();
+        let question3 = document.querySelector("input#question3").value.toLowerCase();
+        let question4 = document.querySelector("input#question4").value.toLowerCase();
+        let question5 = document.querySelector("input#question5").value.toLowerCase();
 
         if (question1 === "front-end" && question3 === "cake" && question4 === "true") {
-            javascript.removeAttribute("class");
-        } else if (question2 === "Christmas" && question3 === "pie") {
-            python.removeAttribute("class", "hidden");
+            javascript.classList.remove("hidden");
+        } else if (question2 === "Christmas" || question3 === "pie") {
+            python.classList.remove("hidden");
         } else if (question1 === "back-end" || question5 === "over-easy") {
-            sql.removeAttribute("class", "hidden");
+            sql.classList.remove("hidden");
         };
 
-        event.preventDefault();
+        e.preventDefault();
+    };
 
-    });
+    function resetForm() {
+        document.querySelector("input#question1").value = "";
+        document.querySelector("input#question2").value = "";
+        document.querySelector("input#question3").value = "";
+        document.querySelector("input#question4").value = "";
+        document.querySelector("input#question5").value = "";
+
+        javascript.classList.add("hidden");
+        python.classList.add("hidden");
+        sql.classList.add("hidden");
+    };
+    
+    form.addEventListener("submit", revealSuggestions);
+    resetBtn.addEventListener("click", resetForm);
 });
   

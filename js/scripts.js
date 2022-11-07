@@ -16,12 +16,13 @@ window.addEventListener("load", function() {
     javascript.classList.add("hidden");
     python.classList.add("hidden");
     sql.classList.add("hidden");
+    error.classList.add("hidden");
 
     if (question1 === "front-end" && question3 === "cake" && question4 === "true") {
       javascript.classList.remove("hidden");
-      } else if (question2 === "christmas" || question3 === "pie") {
+      } else if (question2 === "christmas" && question3 === "pie" || question5 === "poached") {
           python.classList.remove("hidden");
-      } else if (question1 === "back-end" || question5 === "over-easy") {
+      } else if (question1 === "back-end" || question5 === "over-easy" || question4 === "false" && question2 === "halloween") {
           sql.classList.remove("hidden");
       } else {
           error.classList.remove("hidden");
@@ -47,6 +48,7 @@ window.addEventListener("load", function() {
     javascript.classList.add("hidden");
     python.classList.add("hidden");
     sql.classList.add("hidden");
+    error.classList.add("hidden");
   };
     
   form.addEventListener("submit", revealSuggestions);

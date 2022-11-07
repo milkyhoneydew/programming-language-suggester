@@ -26,6 +26,13 @@ window.addEventListener("load", function() {
       } else {
           error.classList.remove("hidden");
       };
+    
+    document.querySelector("input#question1").value = "";
+    document.querySelector("input#question2").value = "";
+    document.querySelector("input#question3").value = "";
+    document.querySelector("input#question4").value = "";
+    document.querySelector("input#question5").value = "";
+  
 
     e.preventDefault();
   };

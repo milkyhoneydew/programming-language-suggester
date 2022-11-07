@@ -48,6 +48,10 @@ body {
   background-position: center center;
 }
 
+#error {
+  height: 50em;
+}
+
 #javascript p {
   color: red;
   font-size: 3em;
@@ -59,6 +63,11 @@ body {
 }
 
 #sql p {
+  color: red;
+  font-size: 3em;
+}
+
+#error p {
   color: red;
   font-size: 3em;
 }
